@@ -1,10 +1,13 @@
-# [HRIS] PlayWright Automation Test
+# 🧪 Test Automation for [HRIS]
 
-A simple upskilling project focused on mastering the fundamentals and best practices of automated web testing using [Playwright](https://playwright.dev/).
+This repository contains the test automation framework and scripts for the **HRIS**. The goal is to ensure the stability, reliability, and performance of the application through automated testing.
 
-## :dart: Project Goal
 
-This repository serves as a personal sandbox for practicing and exploring Playwright-based UI automation. It includes various test scenarios designed to strengthen your understanding of browser automation, selectors, and testing workflows.
+## 📋 Key HR Features Covered
+✅ Employee CRUD operations (Clock In & Clock Out, Edit Scenario, Fill Up Form, Approve & Disapproved)  
+✅ Roles [Employee, Lead, Admin, Manager, Team Lead]
+✅ Form validations and error handling
+✅ Search, filter, and pagination in employee lists
 
 ## 🛠 Tech Stack
 
@@ -12,28 +15,8 @@ This repository serves as a personal sandbox for practicing and exploring Playwr
 - JavaScript or TypeScript (depending on your setup)  
 - Node.js
 
-## :bust_in_silhouette: Target Audience
-
-This project is intended for **Software QA engineers** and testers who are learning or upskilling in Playwright for UI automation.
-
-## :gear: Installation & Setup
-2. Install Dependencies
-- Make sure you have Node.js installed (preferably version 18 or higher).
-``` bash
-- npm install
-```
-
-3. Install Playwright Browsers
+## ▶️ How to Run HR Page Tests
+### 1. Clone the repo
 ```bash
-- npx playwright install
-```
-
-4. Run Tests
-```bash
-- npx playwright test
-```
-- Optional: Open the Test Report
-- After running tests, you can view the report using:
-``` bash
-  - npx playwright show-report
-```
+git clone https://github.com/Melanthonyando/-HRIS-Autmation-in-PlayWright/tree/main
+cd -HRIS-Autmation-in-PlayWright
