@@ -1,0 +1,35 @@
+{
+  "cookies": [
+    {
+      "name": "__Host-next-auth.csrf-token",
+      "value": "4722170033f8b4276f4473b9f2d709366967772607d0ee5ac6492f7f02d47039%7C2068abbf68ff103206a29fd5b53b1e356c37042c60fe1feb129b2070551d78f8",
+      "domain": "staging-hris.sun-ph-dev.link",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__Secure-next-auth.callback-url",
+      "value": "https%3A%2F%2Fstaging-hris.sun-ph-dev.link",
+      "domain": "staging-hris.sun-ph-dev.link",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://staging-hris.sun-ph-dev.link",
+      "localStorage": [
+        {
+          "name": "nextauth.message",
+          "value": "{\"event\":\"session\",\"data\":{\"trigger\":\"getSession\"},\"timestamp\":1752684570}"
+        }
+      ]
+    }
+  ]
+}

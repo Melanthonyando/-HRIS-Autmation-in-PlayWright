@@ -1,0 +1,85 @@
+{
+  "cookies": [
+    {
+      "name": "__Host-next-auth.csrf-token",
+      "value": "98fe17e14c47367e9802e1991f6b6f29c0bcc5cf31fe86876f9a9d8f99102e1e%7C568158b254ae9de0e7e5e18221aec67aa601cabf096c62e1e31828e88cc66bfb",
+      "domain": "staging-hris.sun-ph-dev.link",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__Secure-next-auth.callback-url",
+      "value": "https%3A%2F%2Fstaging-hris.sun-ph-dev.link%2Fsign-in",
+      "domain": "staging-hris.sun-ph-dev.link",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__Secure-next-auth.state",
+      "value": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..pBRbso93kiiDwcbP.hvYoxHQB54gfsMxA7cXik3fMftn59zt8HUqVfdWNhEZYzXaVLt83LQPrlnZGqkw4ZiZpvv9ovsHhAfCmKtWGSI6P8mFdokes-Go0Auytvw6kh0vrMJzbt0Mbs-5_mE7Is6L81AnKD65ChGrii-YQnF9Pjr89oOigv55MnU-xugVCg8rqGJQ.ycJI08Ld3SdGV3Ctgk3wOw",
+      "domain": "staging-hris.sun-ph-dev.link",
+      "path": "/",
+      "expires": 1752727642.655981,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__Secure-next-auth.pkce.code_verifier",
+      "value": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIn0..L8s3EcURyG5dF92I.oNCggwFRhKb5jlqMe1Knz2_JoN7ux52-oiIvaUSJgbG0LFOgmnd5JgT2qvfX8qhTTxorzFM0GguEq67foxSCNBUuaicsTySZwGFRKbkFdF7EiiDYgVpx7fP4W-Q9F7p2vi5ktMbo91cHtvbMpoHDIWDbFRdlU9gPo7aJN45yt1JWgusQUkqpvKLYBThXOw.7aeQ0aQPt6TSYcamA9jOqw",
+      "domain": "staging-hris.sun-ph-dev.link",
+      "path": "/",
+      "expires": 1752727642.656003,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__Host-GAPS",
+      "value": "1:NP0wAf8COPjymCRfVHOZ0zRE9CGwfw:gB1YRtiUmk3eWeMp",
+      "domain": "accounts.google.com",
+      "path": "/",
+      "expires": 1787286742.992539,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "OTZ",
+      "value": "8173712_24_24__24_",
+      "domain": "accounts.google.com",
+      "path": "/",
+      "expires": 1755318744,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "NID",
+      "value": "525=Jyhdn8OZFsTfxxBrYF5EDhIMbNUhAJicjFyshcAvA9AMwsEe6sdbItrd1ecB10iDExEMYEFJ-99oPR6aFZPCTPIUc1qM7AyuYK4_MBy6gDdE281a0FzAyz8FnFkhuHkPvr_wCnmU8GxUrw6mV8DzF9XZgymEZsc35NXwlgs8AakGyk6WsAGseWSImtdswO0zpw",
+      "domain": ".google.com",
+      "path": "/",
+      "expires": 1768537945.340913,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://staging-hris.sun-ph-dev.link",
+      "localStorage": [
+        {
+          "name": "nextauth.message",
+          "value": "{\"event\":\"session\",\"data\":{\"trigger\":\"getSession\"},\"timestamp\":1752726737}"
+        }
+      ]
+    }
+  ]
+}
