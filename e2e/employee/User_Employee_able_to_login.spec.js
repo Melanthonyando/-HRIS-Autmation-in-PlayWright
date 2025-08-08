@@ -1,4 +1,5 @@
 const { test, expect } = require('@playwright/test');
+const { time } = require('console');
 const path = require('path');
 
 test.use({
@@ -6,17 +7,33 @@ test.use({
   headless: false,
 });
 
-test('Debugging must be able to display the employee dashboard', async ({ page }) => {
+test('Employee user should be able to Login successfully using Google Account', async ({ page }) => {
   await page.goto('https://staging-hris.sun-ph-dev.link/sign-in');
   await page.pause(); // Optional for debugging
-});
+  await page.getByRole('button', { name: 'Sign in with Google' }).click();
 
-// Verify that the employee dashboard is displayed
-test('Employee User Able to Login Successfully', async ({ page }) => {
-  await page.getByRole('button', { name: 'Sign in with Google' }).click();
-  await page.getByRole('button', { name: 'Sign in with Google' }).click();
-  await page.goto('https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?client_id=1076770452341-6mva64abcrmoj3l8mg4phb5r3ad75d3r.apps.googleusercontent.com&scope=openid%20email%20profile&response_type=code&redirect_uri=https%3A%2F%2Fstaging-hris.sun-ph-dev.link%2Fapi%2Fauth%2Fcallback%2Fgoogle&access_type=offline&prompt=consent&state=TJvj_FjZDDnrz8SYHpbZaUiGlwQkq4q84Y_KPNwRaao&code_challenge=7LntBAZoHPvIKDKBxwi-YjzuiZdybQQqr4hOzzU_qk0&code_challenge_method=S256&service=lso&o2v=2&flowName=GeneralOAuthFlow');
+  await page.waitForTimeout(1000); // Wait for the page to load
+
+  // Text Displayed google account
+  await expect(page.getByText('Pumili ng account', { exact: true })).toBeVisible();
+  await expect(page.getByText('upang magpatuloy sa sun-ph-dev.link', { exact: true })).toBeVisible();
+
+    await page.waitForTimeout(10000); // Wait for the page to load
+
   await page.getByRole('link', { name: 'Mel Test melanthonytest5@' }).click();
   await page.getByRole('button', { name: 'Continue' }).click();
-  await page.goto('https://staging-hris.sun-ph-dev.link/my-daily-time-record');
+
+  await page.waitForTimeout(500); // Wait for the page to load
+  // verify text display in the Google Account page
+  await page.locator('div').filter({ hasText: /^Sign in with Google$/ }).nth(1);
+  await page.getByText('You’re signing back in to sun').toBeVisible();
+  await page.waitForTimeout(1000); // Wait for the page to load
+
+  // Verify Successfully Message Display
+  await expect(page.getByText('Verification Success!')).toBeVisible();
+
+  await expect(page.getByText('Review sun-ph-dev.link’s')).toBeVisible();
+  await expect(page.getByText('To make changes at any time,')).toBeVisible();
+  await expect(page.getByText('Learn more about Sign in with')).toBeVisible();
+  await expect(page.getByText('To make changes at any time,', { exact: true })).toBeVisible();
 });
