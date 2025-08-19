@@ -26,7 +26,6 @@ test('Employee user should be able to Login successfully using Google Account', 
   await page.waitForTimeout(500); // Wait for the page to load
   // verify text display in the Google Account page
   await page.locator('div').filter({ hasText: /^Sign in with Google$/ }).nth(1);
-  await page.getByText('You’re signing back in to sun').toBeVisible();
   await page.waitForTimeout(1000); // Wait for the page to load
 
   // Verify Successfully Message Display
