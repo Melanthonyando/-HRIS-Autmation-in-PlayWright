@@ -43,7 +43,7 @@ test('Admin user should be able to Login successfully using Google Account', asy
   // assert the link href
   await expect(page.getByRole('link', { name: 'Sign in with Google' }))
   .toHaveAttribute('href', 'https://support.google.com/accounts/answer/12921417?sjid=1919169284593837430-NC');
-
+a
   // Click continue button
   // Can successfully login the page
   await page.getByRole('button', { name: 'Continue' }).click();
